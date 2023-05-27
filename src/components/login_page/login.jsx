@@ -39,7 +39,7 @@ const Login = () => {
                         <input
                             type="password"
                             placeholder="Password"
-                            className="opacity-70 w-full text-lg font-quicksand text-black py-5 border-b border-white outline-none focus:outline-none px-4 my-5 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105" />
+                            className="opacity-70 w-full text-lg font-quicksand text-black py-5 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105" />
 
                     </div>
                     <div className="w-3/4 flex items-center justify-end">
