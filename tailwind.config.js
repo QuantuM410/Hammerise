@@ -7,6 +7,7 @@ module.exports = {
       'secondary': '#000300',
       'tertiary': '#db6221',
     }),
+
     extend: {
 
       fontFamily: {
