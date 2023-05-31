@@ -34,7 +34,7 @@ function Home() {
     return (
         <div className="h-screen bg-gradient-to-r from-gray-900 to-gray-500 flex flex-col items-center justify-center">
             <div className="fixed top-[10%] w-3/5 bg-black py-5 px-10 z-10">
-                <div className="relative text-3xl font-quicksand flex ">
+                <div className="relative text-3xl font-quicksand flex m-auto">
                     <Dropdown />
                     <input
                         type="text"
@@ -53,10 +53,10 @@ function Home() {
                                     step="10"
                                     value={sliderValue}
                                     onChange={handleSliderChange}
-                                    className="relative top-3 w-[200px] "
+                                    className="relative top-3 w-[180px] "
                                 />
-                                <span className="text-white"> {sliderValue}km</span>
-                            </div>
+                                <span className="text-white text-quicksand text-2xl"> {sliderValue}km</span>
+                            </div>  
                         ) : (
                             <div className="flex items-center ">
                                 <FaMapMarked className="text-white text-5xl" onClick={handleMapIconClick} />
