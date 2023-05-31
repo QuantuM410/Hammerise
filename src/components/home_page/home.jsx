@@ -3,7 +3,7 @@ import Dropdown from "./filter_dropdown/filter_dropdown";
 import ProviderCards from "./provider_cards/provider_cards";
 
 
-import { FaEnvelope, FaMapMarked, FaSearch } from "react-icons/fa";
+import { FaEnvelope, FaMapMarked, FaSearch, FaUser, FaUserCircle } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 
 function Home() {
@@ -49,21 +49,22 @@ function Home() {
                                 <input
                                     type="range"
                                     min="0"
-                                    max="100"
+                                    max="80"
                                     step="10"
                                     value={sliderValue}
                                     onChange={handleSliderChange}
-                                    className="relative top-3 w-[180px] "
+                                    className="relative top-3 w-[130px] "
                                 />
                                 <span className="text-white text-quicksand text-2xl"> {sliderValue}km</span>
-                            </div>  
+                            </div>
                         ) : (
-                            <div className="flex items-center ">
+                            <div className="flex items-center mt-2 ">
                                 <FaMapMarked className="text-white text-5xl" onClick={handleMapIconClick} />
                                 <span className="text-white text-3xl ml-2">Near Me</span>
                             </div>
                         )}
                     </div>
+                    <FaUserCircle className="absolute text-white text-6xl ml-2 cursor-pointer right-0 top-0 " />
 
                 </div>
             </div>
