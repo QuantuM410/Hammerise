@@ -4,7 +4,7 @@ import { FaFacebookF, FaGoogle } from 'react-icons/fa';
 
 const Login = () => {
     return (
-        <div className="w-full h-screen flex item-start bg-gradient-to-r from-black via-gray-800 to-gray-600 ">
+        <div className="w-full h-screen flex item-start bg-gradient-to-r from-black  to-[#F1D6AC]">
             <div className=" left-screen relative w-50 h-full flex flex-col">
                 <div className="absolute top-[25%] left-[13%] flex flex-col">
                     <h1 className=" text-8xl text-[#E0E0E0] font-bold font-quicksand">Welcome to our app</h1>
@@ -21,15 +21,6 @@ const Login = () => {
                     <h2 className="text-7xl font-bold font-quicksand text-[#ffffff]">Sign in to your Account</h2>
                     <div className="absolute left-[40%] border-4 w-20 border-white inline-block my-12"></div>
                 </div>
-                {/* <div className="flex justify-center  ">
-                    <a href="#" className="border-2 border-gray-200 rounded-full p-3 mx-1">
-                        <FaFacebookF className="text-5xl text-blue-500" />
-                    </a>
-                    <a href="#" className="border-2 border-gray-200 rounded-full p-3 mx-1">
-                        <FaFacebookF className="text-5xl text-blue-500" />
-                    </a>
-
-                </div> */}
                 <div className="w-full flex flex-col items-center">
                     <div className="w-3/4 flex flex-col">
                         <input

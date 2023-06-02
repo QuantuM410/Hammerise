@@ -1,68 +1,80 @@
-import React from "react";
-import leftsideimage from "../../assets/leftsideimage.png";
-import { FaFacebookF, FaGoogle } from 'react-icons/fa';
+import React, { useState } from 'react';
+import registrationbg from "../../assets/regbg.jpeg";
+import Dropdown2 from './filter_dropdown';
 
-const Registration = () => {
+function Registration() {
+    const [locationRequired, setLocationRequired] = useState(false);
+
+    const handleLocationChange = () => {
+        setLocationRequired(!locationRequired);
+    };
+
     return (
-        <div className="w-full h-screen flex item-start bg-gradient-to-r from-black via-gray-800 to-gray-600 ">
-            <div className=" left-screen relative w-50 h-full flex flex-col">
-                <div className="absolute top-[25%] left-[13%] flex flex-col">
-                    <h1 className=" text-8xl text-[#E0E0E0] font-bold font-quicksand">Welcome to our app</h1>
-                    <div className="border-4 w-20 border-white inline-block mx-auto my-7"></div>
-                    <p className=" text-4xl font-quicksand font-semibold text-[#E0E0E0] my-15">Login and simplify your search for skilled professionals</p></div>
-                <img src={leftsideimage} className="w-full h-full object-cover " />
-            </div>
-            <div className="right-screen relative w-50 h-full flex flex-col">
-                <div className="text-4xl my-5 font-bold font-quicksand flex justify-end">
-                    <span className="text-orange-500">Local </span><span className="text-white">Service </span>Provider
-                </div>
-                <div className="top-[10%] border-2 w-96 border-white inline-block mx-auto mr-0"></div>
-                <div className="mx-30 my-40 top-[12%]">
-                    <h2 className="text-7xl font-bold font-quicksand text-[#ffffff]">Sign in to your Account</h2>
-                    <div className="absolute left-[40%] border-4 w-20 border-white inline-block my-12"></div>
-                </div>
-                {/* <div className="flex justify-center  ">
-                    <a href="#" className="border-2 border-gray-200 rounded-full p-3 mx-1">
-                        <FaFacebookF className="text-5xl text-blue-500" />
-                    </a>
-                    <a href="#" className="border-2 border-gray-200 rounded-full p-3 mx-1">
-                        <FaFacebookF className="text-5xl text-blue-500" />
-                    </a>
-
-                </div> */}
-                <div className="w-full flex flex-col items-center">
-                    <div className="w-3/4 flex flex-col">
+        <div className="main_body h-screen w-screen relative">
+            <div className="brightness-75" style={{ zIndex: 1 }}></div>
+            <div
+                className="absolute inset-0 bg-cover bg-center brightness-70"
+                style={{ backgroundImage: `url(${registrationbg})`, zIndex: 0 }}
+            ></div>
+            <div className="flex items-center justify-center h-full relative z-10">
+                <div className="h-3/5 w-3/5 bg-[#F1D6AC] bg-opacity-80  p-8 rounded-3xl shadow-lg flex flex-col">
+                    <h1 className="flex justify-center items-center font-quicksand text-5xl font-bold text-black">Sign Up</h1>
+                    <div className="border-4 w-20 border-black mx-auto my-6" />
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        className="ml-10 w-[600px] bg-[#000000] opacity-70 text-lg font-quicksand text-white py-6 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105"
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        className="ml-10 w-[600px] bg-[#000000] opacity-70 text-lg font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105"
+                    />
+                    <input
+                        type="password"
+                        placeholder="Confirm Password"
+                        className="ml-10 w-[600px] bg-[#000000] opacity-70 text-lg font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105"
+                    />
+                    <div className="flex ml-10">
                         <input
-                            type="email"
-                            placeholder="E-mail"
-                            className="opacity-70 w-full text-lg font-quicksand text-black py-5 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105" />
+                            type="text"
+                            placeholder="Street"
+                            className="w-[290px] bg-[#000000] opacity-70 text-lg font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105 mr-2"
+                        />
                         <input
-                            type="password"
-                            placeholder="Password"
-                            className="opacity-70 w-full text-lg font-quicksand text-black py-5 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105" />
+                            type="text"
+                            placeholder="Area"
+                            className="w-[300px] bg-[#000000] opacity-70 text-lg font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105 mr-2"
+                        />
+                    </div>
+                    <div className="flex ml-10">
+                        <input
+                            type="text"
+                            placeholder="District"
+                            className="w-[290px] bg-[#000000] opacity-70 text-lg font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105 mr-2"
+                        />
+                        <input
+                            type="text"
+                            placeholder="State"
+                            className="w-[300px] bg-[#000000] opacity-70 text-lg font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105"
+                        />
+                    </div>
 
+                    <Dropdown2 />
+                    <div className="flex items-center ml-10 mt-10 my-4">
+                        <input
+                            type="checkbox"
+                            id="locationCheckbox"
+                            className="form-checkbox h-10 w-5  text-[#000000] rounded-md bg-[#000000] transition duration-200 ease-in-out "
+                            checked={locationRequired}
+                            onChange={handleLocationChange}
+                        />
+                        <label htmlFor="locationCheckbox" className="ml-2 font-quicksand  font-bold text-xl text-black">This product requires your location</label>
                     </div>
-                    <div className="w-3/4 flex items-center justify-end">
-                        <p className="text-2xl font-quicksand text-white underline underline-offset-2 my-2">Forgot Password?</p>
-                    </div>
-                    <div className="w-full flex flex-col  items-center justify-center">
-                        <button className="w-3/4 text-white my-32 bg-[#db6221] rounded-2xl py-5 text-center flex items-center justify-center text-3xl hover:bg-[#e6956a]">
-                            Log In
-                        </button>
-                    </div>
-
-                    <div className="w-full flex items-center justify-center ">
-                        <p className="text-2xl font-quicksand text-white">Don't have an account? <span className="font-semibold underline underline-offset-2">Sign up</span></p>
-                    </div>
-
                 </div>
-
-
             </div>
-
-        </div >
-
-    )
+        </div>
+    );
 }
 
 export default Registration;
