@@ -83,7 +83,7 @@ function Registration() {
                         Register
                     </button>
                     <div className="w-full flex items-center justify-center mt-4">
-                        <p className="text-xl font-quicksand text-black">Already have an account? <span className="font-semibold underline underline-offset-2">Sign in</span></p>
+                        <p className="text-xl font-quicksand text-black">Already have an account? <span className="font-semibold underline underline-offset-2 cursor-pointer">Sign in</span></p>
                     </div>
 
                 </div>
