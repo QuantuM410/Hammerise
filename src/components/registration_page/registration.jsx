@@ -18,7 +18,7 @@ function Registration() {
                 style={{ backgroundImage: `url(${registrationbg})`, zIndex: 0 }}
             ></div>
             <div className="flex items-center justify-center h-full relative z-10">
-                <div className="h-3/5 w-[1200px] bg-[#F1D6AC] bg-opacity-80  p-8 rounded-3xl shadow-lg flex flex-col">
+                <div className="h-[970px] w-[1200px] bg-[#F1D6AC] bg-opacity-80  p-8 rounded-3xl shadow-lg flex flex-col">
                     <h1 className="flex justify-center items-center font-quicksand text-5xl font-bold text-black">Sign Up</h1>
                     <div className="border-4 w-20 border-black mx-auto my-6" />
                     <div className='flex'>
@@ -66,7 +66,7 @@ function Registration() {
                             </div>
 
                             <Dropdown2 />
-                            <div className="flex items-center ml-10 mt-10 my-4">
+                            <div className="flex items-center ml-10 mt-6 my-4">
                                 <input
                                     type="checkbox"
                                     id="locationCheckbox"
@@ -79,6 +79,13 @@ function Registration() {
                         </div>
                         <ImageUpload />
                     </div>
+                    <button className='rounded-lg w-1/2 h-[70px] mx-auto font-quicksand font-bold text-white bg-secondary opacity-80 text-4xl hover:bg-[#313131]'>
+                        Register
+                    </button>
+                    <div className="w-full flex items-center justify-center mt-4">
+                        <p className="text-xl font-quicksand text-black">Already have an account? <span className="font-semibold underline underline-offset-2">Sign in</span></p>
+                    </div>
+
                 </div>
             </div>
         </div>
