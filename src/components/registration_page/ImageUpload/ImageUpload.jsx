@@ -51,7 +51,7 @@ function ImageUpload() {
 
             <button
                 onClick={handleButtonClick}
-                className="mt-3 px-8 py-2 bg-gray-200 border-none rounded-md cursor-pointer font-quicksand font-bold text-white text-md bg-secondary opacity-80 hover:bg-secondary"
+                className="mt-3 px-8 py-2 bg-gray-200 border-none rounded-md cursor-pointer font-quicksand font-bold text-white text-lg bg-secondary opacity-80 hover:bg-secondary"
             >
                 Upload Image
             </button>
