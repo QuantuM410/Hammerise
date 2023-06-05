@@ -27,41 +27,41 @@ function Registration() {
                                 type="email"
                                 placeholder="Email"
                                 autoComplete="off"
-                                className=" w-[300px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
+                                className=" w-[325px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
                             />
                             <input
                                 type="password"
                                 autoComplete="off"
                                 placeholder="Password"
-                                className=" w-[300px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
+                                className=" w-[325px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
                             />
                             <input
                                 type="password"
                                 placeholder="Confirm Password"
-                                className="w-[300px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4  my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
+                                className="w-[325px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4  my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
                             />
                             <div className="flex">
                                 <input
                                     type="text"
                                     placeholder="Street"
-                                    className="w-[145px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
+                                    className="w-[155px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
                                 />
                                 <input
                                     type="text"
                                     placeholder="Area"
-                                    className="ml-2 w-[150px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
+                                    className="ml-2 w-[160px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
                                 />
                             </div>
                             <div className="flex ">
                                 <input
                                     type="text"
                                     placeholder="District"
-                                    className="w-[145px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
+                                    className="w-[155px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
                                 />
                                 <input
                                     type="text"
                                     placeholder="State"
-                                    className="ml-2 w-[150px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
+                                    className="ml-2 w-[160px] h-[50px] bg-[#000000] opacity-70 text-sm font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-1 bg-transparent rounded-lg transition-transform duration-300 focus:scale-105"
                                 />
                             </div>
 
@@ -79,7 +79,7 @@ function Registration() {
                         </div>
                         <ImageUpload />
                     </div>
-                    <button className='rounded-md w-2/5 h-[60px] mx-auto font-quicksand font-bold text-white bg-secondary opacity-80 text-2xl hover:bg-[#313131]'>
+                    <button className='mt-3 rounded-md w-2/5 h-[50px] mx-auto font-quicksand font-bold text-white bg-secondary opacity-80 text-2xl hover:bg-[#313131]'>
                         Register
                     </button>
                     <div className="w-full flex items-center justify-center mt-4">
