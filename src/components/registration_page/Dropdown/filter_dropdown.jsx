@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
+
 function Dropdown2() {
     const [selectedFilter, setSelectedFilter] = useState('');
     const [isOpen, setIsOpen] = useState(false)

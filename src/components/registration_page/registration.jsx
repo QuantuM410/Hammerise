@@ -27,7 +27,7 @@ function Registration() {
                                 type="email"
                                 placeholder="Email"
                                 autoComplete="off"
-                                className="ml-10 w-[600px] bg-[#000000] opacity-70 text-lg font-quicksand text-white py-6 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105"
+                                className="ml-10 w-[600px] bg-[#000000] opacity-70 text-lg font-quicksand text-white py-5 border-b border-white outline-none focus:outline-none px-4 my-4 bg-transparent rounded-2xl transition-transform duration-300 focus:scale-105"
                             />
                             <input
                                 type="password"

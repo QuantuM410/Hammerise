@@ -4,7 +4,7 @@ import { FaFacebookF, FaGoogle } from 'react-icons/fa';
 
 const Login = () => {
     return (
-        <div className="w-full h-screen flex item-start bg-gradient-to-r from-black  to-[#F1D6AC]">
+        <div className="w-full h-screen flex item-start bg-gradient-to-r from-black via-gray-700 to-gray-800">
             <div className=" left-screen relative w-50 h-full flex flex-col">
                 <div className="absolute top-[25%] left-[13%] flex flex-col">
                     <h1 className=" text-8xl text-[#E0E0E0] font-bold font-quicksand">Welcome to our app</h1>
@@ -34,7 +34,7 @@ const Login = () => {
 
                     </div>
                     <div className="w-3/4 flex items-center justify-end">
-                        <p className="text-2xl font-quicksand text-white underline underline-offset-2 my-2">Forgot Password?</p>
+                        <p className="text-2xl font-quicksand text-white underline underline-offset-2 my-2 cursor-pointer">Forgot Password?</p>
                     </div>
                     <div className="w-full flex flex-col  items-center justify-center">
                         <button className="w-3/4 text-white my-32 bg-[#db6221] rounded-2xl py-5 text-center flex items-center justify-center text-3xl hover:bg-[#e6956a]">
@@ -43,7 +43,7 @@ const Login = () => {
                     </div>
 
                     <div className="w-full flex items-center justify-center ">
-                        <p className="text-2xl font-quicksand text-white">Don't have an account? <span className="font-semibold underline underline-offset-2">Sign up</span></p>
+                        <p className="text-2xl font-quicksand text-white">Don't have an account? <span className="font-semibold underline underline-offset-2 cursor-pointer">Sign up</span></p>
                     </div>
 
                 </div>

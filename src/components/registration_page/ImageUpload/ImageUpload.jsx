@@ -30,7 +30,7 @@ function ImageUpload() {
 
     return (
         <div className="flex flex-col mx-auto  mt-4 items-center">
-            <div
+            <div    
                 className="w-96 h-96 border-4 border-black rounded-2xl bg-cover bg-center bg-no-repeat"
                 style={containerStyle}
             >
