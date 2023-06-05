@@ -5,8 +5,8 @@ import Registration from "./components/registration_page/registration";
 
 function App() {
   return (
-    <div className="App">
-      <Registration />
+    <div className="App ">
+      <Login />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     backgroundColor: theme => ({
@@ -9,6 +10,9 @@ module.exports = {
     }),
 
     extend: {
+      screens: {
+        '67': '67%',
+      },
 
       fontFamily: {
         'quicksand': ['Quicksand', 'sans-serif']
