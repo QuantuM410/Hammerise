@@ -29,9 +29,9 @@ function ImageUpload() {
         : {};
 
     return (
-        <div className="flex flex-col mx-auto  mt-4 items-center">
+        <div className="flex flex-col mx-auto  mt-3  items-center">
             <div
-                className="w-96 h-96 border-4 border-black rounded-2xl bg-cover bg-center bg-no-repeat"
+                className="w-72 h-72 border-4 border-black rounded-2xl bg-cover bg-center bg-no-repeat"
                 style={containerStyle}
             >
                 {!uploadedImage && (
@@ -51,7 +51,7 @@ function ImageUpload() {
 
             <button
                 onClick={handleButtonClick}
-                className="mt-4 px-8 py-4 bg-gray-200 border-none rounded-xl cursor-pointer font-quicksand font-bold text-white text-2xl bg-secondary opacity-80"
+                className="mt-3 px-8 py-2 bg-gray-200 border-none rounded-md cursor-pointer font-quicksand font-bold text-white text-md bg-secondary opacity-80 hover:bg-secondary"
             >
                 Upload Image
             </button>

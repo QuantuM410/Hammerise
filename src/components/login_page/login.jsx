@@ -8,7 +8,7 @@ const Login = () => {
             <div className=" left-screen relative w-50 h-full flex flex-col overflow-hidden">
                 <div className="absolute top-[25%] left-[13%] flex flex-col">
                     <h1 className=" text-6xl text-[#E0E0E0] font-bold font-quicksand">Welcome to our app</h1>
-                    <div className="border-4 w-20 border-white inline-block mx-auto my-7"></div>
+                    <div className="border-4 w-20 border-white inline-block mx-auto my-7 rounded-lg"></div>
                     <p className=" text-2xl font-quicksand font-semibold text-[#E0E0E0] my-15">Login and simplify your search for skilled professionals</p></div>
                 <img src={leftsideimage} className="w-full h-full object-cover " />
             </div>
@@ -16,10 +16,10 @@ const Login = () => {
                 <div className="text-2xl my-5 font-bold font-quicksand flex justify-end mr-10">
                     <span className="text-orange-500">Ham</span><span className="text-white">mer</span>iZe
                 </div>
-                <div className="border-2 w-[135px] border-white inline-block mx-auto my-0 mr-10"></div>
+                <div className="border-2 w-[135px] border-white inline-block mx-auto my-0 mr-10 rounded-lg"></div>
                 <div className="mx-30 my-20 ">
                     <h2 className="text-5xl font-bold font-quicksand text-[#ffffff]">Sign in to your Account</h2>
-                    <div className="absolute left-[40%] border-4 w-20 border-white inline-block my-12"></div>
+                    <div className="absolute left-[40%] border-4 w-20 border-white inline-block my-12 rounded-lg"></div>
                 </div>
                 <div className="w-full flex flex-col items-center">
                     <div className="w-3/4 flex flex-col">
@@ -34,7 +34,7 @@ const Login = () => {
 
                     </div>
                     <div className="w-3/4 flex items-center justify-end">
-                        <p className="text-lg font-quicksand text-white underline underline-offset-2 my-2 cursor-pointer">Forgot Password?</p>
+                        <p className="text-lg font-quicksand text-white underline underline-offset-2 my-2 cursor-pointer ">Forgot Password?</p>
                     </div>
                     <div className="w-full flex flex-col  items-center justify-center">
                         <button className="w-3/4 text-white my-20 bg-[#db6221] rounded-2xl py-3 text-center flex items-center justify-center text-3xl hover:bg-[#e6956a]">
