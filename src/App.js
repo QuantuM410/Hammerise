@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App ">
       <Registration />
-      {/* hellow */}
+      {/* hellow 2*/}
     </div>
   );
 }
