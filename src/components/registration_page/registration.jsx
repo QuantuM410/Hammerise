@@ -18,8 +18,8 @@ function Registration() {
                 style={{ backgroundImage: `url(${registrationbg})`, zIndex: 0 }}
             ></div>
             <div className="flex items-center justify-center h-full relative z-10">
-                <div className="h-[670px] w-[800px] bg-[#F1D6AC] bg-opacity-80  p-8 rounded-3xl shadow-lg flex flex-col">
-                    <h1 className="flex justify-center items-center font-quicksand text-3xl font-bold text-black">Sign Up</h1>
+                <div className="h-[670px] w-[750px] bg-[#F1D6AC] bg-opacity-80  p-8 rounded-3xl shadow-lg flex flex-col">
+                    <h1 className="flex justify-center items-center font-quicksand text-4xl font-bold text-black">Sign Up</h1>
                     <div className="border-4 w-20 border-black mx-auto my-3 rounded-lg" />
                     <div className='flex'>
                         <div className='flex ml-0 mx-auto flex-col justify-around mt-3'>
