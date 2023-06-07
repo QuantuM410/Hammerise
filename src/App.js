@@ -6,7 +6,7 @@ import Registration from "./components/registration_page/registration";
 function App() {
   return (
     <div className="App ">
-      <Home />
+      <Home/>
     </div>
   );
 }

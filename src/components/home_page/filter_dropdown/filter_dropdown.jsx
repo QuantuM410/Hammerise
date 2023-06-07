@@ -20,7 +20,7 @@ function Dropdown() {
         <div className="relative flex flex-col items-center w-[200px] rounded-lg">
             <button
                 onClick={() => setIsOpen((prev) => !prev)}
-                className="bg-[#ffffff] h-12 w-4/5 flex items-center justify-between font-bold font-quicksand text-lg rounded-lg tracking-wider border-4 border-transparent active:border-gray-800 duration-300 active:text-gray-800"
+                className="bg-[#ffffff] h-12 w-4/5 flex items-center ml-2 justify-between font-bold font-quicksand text-lg rounded-lg tracking-wider border-4 border-transparent active:border-gray-800 duration-300 active:text-gray-800"
             >
                 {selectedFilter || 'Filter'}
                 {!isOpen ? (
