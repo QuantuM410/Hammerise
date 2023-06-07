@@ -6,35 +6,38 @@ import { FaPhone } from "react-icons/fa";
 
 function ProviderCards() {
     return (
-        <div className="group flex flex-col items-center">
-            <div className="relative flex w-[500px] h-[300px] font-quicksand bg-secondary rounded-3xl group-hover:h-[400px] duration-300 text-white text-3xl">
-                <div className="expert_image absolute top-[-30%] w-[225px] h-[225px] bg-primary left-[26%] rounded-3xl">
-                    <img
-                        src={user_profile_image}
-                        className="w-full h-full object-cover rounded-3xl"
-                        alt="User Profile"
-                    />
-                </div>
-                <div className="justify-center flex flex-col items-center absolute bottom-10 left-0 py-4 px-6 w-full group-hover:opacity-0 duration-300">
-                    <h2 className="text-white font-bold">Name</h2>
-                    <p className="text-gray-300 text-2xl">Occupation</p>
-                </div>
-                <div className="justify-center flex flex-col items-center absolute bottom-10 left-0 py-4 px-6 w-full opacity-0 group-hover:opacity-100 duration-300">
-                    <h2 className="text-white font-bold">Name</h2>
-                    <p className="text-gray-300 text-2xl">Occupation</p>
-                    <div className="border-4 w-40 border-white inline-block mx-auto my-7"></div>
-                    <div className="flex items-center">
-                        <FaPhone className="mr-2" />
-                        <p className="text-gray-300 text-2xl">Contact</p>
-                    </div>
-                    <div className="flex items-center mt-2">
-                        <FaEnvelope className="mr-2" />
-                        <p className="text-gray-300 text-2xl">Mail</p>
+        <div className="flex flex-wrap justify-center mt-24">
+            <div className="w-full md:w-auto md:flex-grow md:flex-shrink-0 p-2">
+                <div className="group flex flex-col items-center ">
+                    <div className="relative flex w-[300px] h-[250px] font-quicksand bg-[#1a1a1a] rounded-xl group-hover:h-[325px] duration-300 text-white text-3xl">
+                        <div className="expert_image absolute top-[-30%] w-[150px] h-[150px] left-[24%] bg-primary rounded-3xl">
+                            <img
+                                src={user_profile_image}
+                                className="w-full h-full object-cover rounded-3xl"
+                                alt="User Profile"
+                            />
+                        </div>
+                        <div className="justify-center flex flex-col items-center absolute bottom-14 left-0 py-4 px-6 w-full group-hover:opacity-0 duration-300">
+                            <h2 className="text-white font-bold text-2xl">Name</h2>
+                            <p className="text-gray-300 text-xl">Occupation</p>
+                        </div>
+                        <div className="justify-center flex flex-col items-center absolute bottom-10 left-0 py-4 px-6 w-full opacity-0 group-hover:opacity-100 duration-300">
+                            <h2 className="text-white font-bold text-xl">Name</h2>
+                            <p className="text-gray-300 text-lg">Occupation</p>
+                            <div className="border-2     w-40 border-white inline-block mx-auto my-7"></div>
+                            <div className="flex items-center">
+                                <FaPhone className="mr-2 text-lg" />
+                                <p className="text-gray-300 text-lg">Contact</p>
+                            </div>
+                            <div className="flex items-center mt-2">
+                                <FaEnvelope className="mr-2 text-lg" />
+                                <p className="text-gray-300 text-lg">Mail</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     )
 }
 

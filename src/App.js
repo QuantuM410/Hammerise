@@ -6,8 +6,7 @@ import Registration from "./components/registration_page/registration";
 function App() {
   return (
     <div className="App ">
-      <Registration />
-      {/* hellow 2*/}
+      <Home />
     </div>
   );
 }
